@@ -1,68 +1,89 @@
-# AccuKnox QA Trainee Assignment – User Management Automation
+# AccuKnox QA Trainee Assignment
 
 ## Overview
 
-This project contains automation test cases for the OrangeHRM application.
-The focus is on the Admin → User Management module.
+This repository contains solutions for both problem statements of the QA Trainee assessment.
 
-The script covers the complete flow:
+---
 
-* Login with valid credentials
+# Problem Statement 1: User Management (Manual + Automation)
+
+# What is covered
+
+* Login with valid and invalid credentials
+* Navigate to Admin module
 * Add a new user
 * Search the created user
 * Edit user details
 * Delete the user
-* Verify user deletion
+* Validate all actions
 
----
-## Tech Stack
+# Automation Details
 
-* Python
-* Playwright
-* Pytest
----
+* Tool: Playwright with Python
+* Framework: Pytest
+* Script: `test_user_management.py`
 
-## Setup Instructions
-
-1. Install dependencies:
+# How to Run
 
 ```bash
 pip install playwright pytest
-```
-
-2. Install Playwright browsers:
-
-```bash
 python -m playwright install
-```
-
----
-
-## How to Run Tests
-
-```bash
 python -m pytest -s test_user_management.py
 ```
 
 ---
 
-## Test Details
+### Bug Found (Manual Testing)
 
-The test performs the following steps:
-
-1. Logs into OrangeHRM using admin credentials
-2. Navigates to Admin module
-3. Adds a new user with generated username
-4. Searches for the created user
-5. Updates the user status
-6. Deletes the user
-7. Verifies the user is removed from the system
-
-## Bug Found (Manual Testing)
-
-* Record count inconsistency observed after reset/search actions in Admin module
+* Record count inconsistency after using reset/search filters in Admin → User Management
 
 ---
-## Author
 
+## Problem Statement 2: Python Scripts
+
+### 1. System Health Monitoring (`system_health.py`)
+
+* Checks CPU usage
+* Checks memory usage
+* Checks disk usage
+* Prints alert if threshold is exceeded
+
+### 2. Application Health Checker (`app_health_check.py`)
+
+* Sends request to a given URL
+* Checks HTTP status code
+* Prints whether application is UP or DOWN
+
+---
+
+## How to Run (Problem 2)
+
+Install dependencies:
+
+```bash
+pip install psutil requests
+```
+
+Run scripts:
+
+```bash
+python system_health.py
+python app_health_check.py
+```
+
+---
+
+## Repository Structure
+
+```text
+test_user_management.py
+system_health.py
+app_health_check.py
+README.md
+```
+
+---
+
+## Author
 Dhruv Attrey
