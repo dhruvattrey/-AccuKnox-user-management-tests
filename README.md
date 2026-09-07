@@ -1,12 +1,12 @@
-# AccuKnox QA Trainee Assignment
+# Orange hrm testing
 
 ## Overview
 
-This repository contains solutions for both problem statements of the QA Trainee assessment.
+This repository contains solutions for both problem statements of the Orange hrm testing.
 
 ---
 
-# Problem Statement 1: User Management (Manual + Automation)
+ User Management (Manual + Automation)
 
 # What is covered
 
@@ -39,8 +39,7 @@ python -m pytest -s test_user_management.py
 * Record count inconsistency after using reset/search filters in Admin → User Management
 
 ---
-
-## Problem Statement 2: Python Scripts
+ Python Scripts
 
 ### 1. System Health Monitoring (`system_health.py`)
 
